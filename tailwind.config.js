@@ -1,10 +1,9 @@
-module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}", // убедитесь, что путь включает ваши компоненты
+  ],
   theme: {
-    extend: {},
-  },
-  variants: {
     extend: {},
   },
   plugins: [],

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Navbar.css'
+import logo from '../assets/logo.svg'
 
 export const Navbar = () => {
     const navItems = [
@@ -9,14 +9,15 @@ export const Navbar = () => {
     ];
 
   return (
-    <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+    <nav class="w-full fixed top-0 left-0 z-50 backdrop-blur-3xl">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="hidden md:flex items-center space-x-8">
+            <img src={logo} alt="Logo" class="select-none"/>
+            <div class="hidden md:flex items-center space-x-15">
                 {navItems.map((item) => (
                     <a
                     key={item.name}
                     href={item.href}
-                    class="poppins-semibold text-gray-600 hover:text-blue-600 transition-colors duration-300"
+                    class="select-none text-xl poppins-semibold text-gray-500 hover:text-indigo-600 transition-colors duration-300"
                     >
                         {item.name}
                     </a>
@@ -24,7 +25,7 @@ export const Navbar = () => {
             </div>
 
             <div>
-                <a href="#" class="text-sm poppins-semibold bg-blue-600 hover:bg-blue-600 text-white px-7 py-3 rounded-lg transition-colors suration-300">
+                <a href="#" class="select-none text-sm poppins-semibold bg-indigo-600 hover:bg-indigo-600 text-white px-7 py-4 rounded-lg transition-colors suration-300">
                     Contact us
                 </a>
             </div>
