@@ -9,7 +9,7 @@ export const Navbar = () => {
     ];
 
   return (
-    <nav class="w-full fixed top-0 left-0 z-50 backdrop-blur-3xl">
+    <nav class=" w-full top-0 left-0 z-50 backdrop-blur-3xl">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <img src={logo} alt="Logo" class="select-none"/>
             <div class="hidden md:flex items-center space-x-15">

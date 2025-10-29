@@ -1,5 +1,4 @@
 import React from 'react'
-import { ArrowRight } from 'lucide-react';
 import clsx from "clsx";
 
 export const ServiceCard = ({ icon, title, description, className = '' }) => {
