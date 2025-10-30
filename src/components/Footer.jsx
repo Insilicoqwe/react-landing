@@ -1,10 +1,11 @@
 import React from 'react'
 import { ChevronRight } from 'lucide-react';
 import world_map from '../assets/world-map.png'
+import logo from '../assets/logo.svg'
 
 export const Footer = () => {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col justify-end">
+    <div className="mt-40 bg-white flex flex-col justify-end">
       {/* Main Content Spacer */}
       <div className="flex-grow"></div>
 
@@ -39,16 +40,14 @@ export const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Column 1 - About */}
             <div>
-              <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
-                <span className="text-2xl font-bold">C</span>
-              </div>
+              <img src={logo} className="w-12 h-12 mb-6 select-none drop-shadow-[0_0px_10px_rgba(79,57,246,0.5)]"/>
               <p className="text-gray-400 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
             </div>
 
             {/* Column 2 - Our Office */}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col">
               <h3 className="text-xl font-semibold mb-6">Our Office</h3>
               <div className="relative w-full max-w-sm">
                 <img src={world_map} alt="" />

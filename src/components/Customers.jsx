@@ -16,25 +16,24 @@ export const Customers = () => {
     <section class="py-15">
         <div class="justify-center items-center">
             <div class="text-center">
-                <p class="poppins-semibold text-xl text-red-500 mb-5 mt-8">Some of Our Great Customers</p>
-                <h1 class="poppins-semibold text-3xl">Some of the companies we have worked with</h1>
+                <p class="poppins-semibold text-sm md:text-md xl:text-xl text-red-500 mt-8">Some of Our Great Customers</p>
+                <h1 class="poppins-semibold text-lg md:text-xl xl:text-3xl">Some of the companies we have worked with</h1>
             </div>
 
             <div class="justify-center py-10">
-                <div class="flex justify-center gap-4 py-6">
-                    <img src={amazon} alt="" />
-                    <img src={jeep} alt="" />
-                    <img src={areem} alt="" />
-                    <img src={hubspot} alt="" />
-                    <img src={jquery} alt="" />
+                <div class="flex flex-col xl:flex-row justify-center gap-4 xl:gap-11">
+                    <img src={amazon} alt="" class="object-none h-15"/>
+                    <img src={jeep} alt="" class="object-none h-15"/>
+                    <img src={areem} alt="" class="object-none h-15"/>
+                    <img src={hubspot} alt="" class="object-none h-15"/>
+                    <img src={jquery} alt="" class="object-none h-15"/>
                 </div>
-
-                <div class="flex justify-center gap-4 py-6">
-                    <img src={canon} alt="" />
-                    <img src={fedex} alt="" />
-                    <img src={bitcoin} alt="" />
-                    <img src={pirelli} alt="" />
-                    <img src={philips} alt="" />
+                <div class="flex flex-col xl:flex-row justify-center gap-4 xl:gap-0">
+                    <img src={canon} alt="" class="object-none h-15"/>
+                    <img src={fedex} alt="" class="object-none h-15"/>
+                    <img src={bitcoin} alt="" class="object-none h-15"/>
+                    <img src={pirelli} alt="" class="object-none h-15"/>
+                    <img src={philips} alt="" class="object-none h-15"/>
                 </div>
             </div>
         </div>

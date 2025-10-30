@@ -9,16 +9,16 @@ import { ServiceCard } from './ServiceCard'
 
 export const Services = () => {
   return (
-    <section class="h-screen">
+    <section>
         <div class="justify-center items-center">
             <div class="text-center">
-                <p class="poppins-semibold text-xl text-red-500 mb-5 mt-8">Our services</p>
-                <h1 class="poppins-semibold text-3xl">The various services we provide to make your<br /> business more powerful</h1>
+                <p class="poppins-semibold text-sm md:text-md xl:text-xl text-red-500 mt-8">Our services</p>
+                <h1 class="poppins-semibold text-lg md:text-xl xl:text-3xl">The various services we provide to make your<br /> business more powerful</h1>
             </div>
         </div>
 
-        <div className="flex items-center justify-center mt-8">
-            <div className="grid grid-cols-3 gap-4">
+        <div className="flex justify-center mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
 
                 <ServiceCard icon={fire} title="Ideate" description="We help you develop creative ideas so that your business can grow more rapidly" className='drop-shadow-indigo-600/25'/>
                 <ServiceCard icon={ink} title="Design" description="We provide services with the best designs than our designer team for your business" className='drop-shadow-red-600/25'/>

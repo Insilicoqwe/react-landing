@@ -13,7 +13,7 @@ export const StartNow = () => {
             </h2>
             
             <div className="flex justify-center max-w-md mx-auto relative">
-              <button class="flex gap-2 poppins-regular bg-indigo-600 rounded-xl py-4 px-11 text-white text-md">
+              <button class="flex gap-2 poppins-regular bg-indigo-600 hover:bg-indigo-700 transition-colors cursor-pointer drop-shadow-2xl drop-shadow-amber-600/70 rounded-xl py-4 px-11 text-white text-md">
                 Start now
                 <ChevronRight/>
               </button>

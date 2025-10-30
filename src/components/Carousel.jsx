@@ -30,7 +30,7 @@ export default function Carousel() {
     setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   return (
     <div className="bg-orange-400 text-white flex flex-col items-center justify-center py-20 px-4">
-      <div className="flex items-center justify-center gap-25 w-full max-w-7xl">
+      <div className="flex items-center justify-center gap-5 xl:gap-25 w-full max-w-7xl">
         <button
           onClick={prev}
           className="bg-white text-orange-400 p-3 rounded-full shadow-md hover:bg-indigo-600 hover:text-white transition cursor-pointer"

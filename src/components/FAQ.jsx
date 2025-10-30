@@ -38,14 +38,15 @@ export default function FAQ() {
   };
 
   return (
-    <div className="bg-gray-50 py-16 px-4 flex justify-center">
+    <div className="relative bg-white py-16 overflow-hidden px-4 flex justify-center">
       <div className="w-full max-w-3xl">
-        <div class="text-center">
-            <p class="poppins-semibold text-xl text-red-500 mb-5 mt-15">Working space</p>
-            <h1 class="poppins-semibold text-3xl">Let’s meet our interior room decoration</h1>
+
+        <div class="relative text-center z-10">
+            <p class="poppins-semibold text-sm md:text-md xl:text-xl text-red-500 mt-8">Frequently Ask Question</p>
+            <h1 class="poppins-semibold text-lg md:text-xl xl:text-3xl">Some of our frequently asked questions</h1>
         </div>
 
-        <div className="space-y-4 mt-15">
+        <div className="relative space-y-4 mt-15 z-10">
           {faqs.map((item, index) => (
             <div
               key={index}

@@ -3,48 +3,48 @@ import { CircleCheck } from 'lucide-react';
 
 export const Statistics = () => {
   return (
-    <section class="h-screen flex justify-between px-90 mt-30">
-        <div class="flex gap-8">
-            <div class="flex flex-col grid-cols-1 gap-8 mt-10">
+    <section class="xl:flex xl:justify-center gap-30 py-25 bg-gray-50">
+        <div class="xl:flex gap-8">
+            <div class="xl:flex xl:flex-col xl:grid-cols-1 gap-8 mt-10">
 
-                <div className="select-none bg-white rounded-xl drop-shadow-[0_0px_100px_rgba(124,134,255,0.3)] p-8 pt-15 pb-15 w-62 items-center text-center transition-shadow duration-300 cursor-pointer">
+                <div className="select-none bg-white rounded-xl drop-shadow-[0_0px_100px_rgba(124,134,255,0.3)] px-8 py-8 mx-8 mb-8 xl:mb-0 xl:py-15 xl:mx-0 xl:w-62 items-center text-center transition-shadow duration-300 cursor-pointer">
                     <h3 className="poppins-semibold text-5xl font-semibold mb-2 mt-8 text-indigo-600">70K+</h3>           
-                    <p className="poppins-regular text-gray-500 mb-6">
+                    <p className="poppins-regular text-xl text-gray-500 mb-6">
                         We have more than customers
                     </p>
                 </div>
 
-                <div className="select-none bg-white rounded-xl drop-shadow-[0_0px_100px_rgba(124,134,255,0.3)] p-8 pt-15 pb-15 w-62 items-center text-center transition-shadow duration-300 cursor-pointer">
-                    <h3 className="poppins-semibold text-5xl font-semibold mb-2 mt-8 text-red-600">10M+</h3>           
-                    <p className="poppins-regular text-gray-500 mb-6">
+                <div className="select-none bg-white rounded-xl drop-shadow-[0_0px_100px_rgba(124,134,255,0.3)] px-8 py-8 mx-8 mb-8 xl:mb-0 xl:py-15 xl:mx-0 xl:w-62 items-center text-center transition-shadow duration-300 cursor-pointer">
+                    <h3 className="poppins-semibold text-5xl font-semibold mb-2 mt-8 text-red-500">10M+</h3>           
+                    <p className="poppins-regular text-xl text-gray-500 mb-6">
                         People who are helped because of our hard work
                     </p>
                 </div>
 
             </div>
-            <div class="flex flex-col grid-cols-1 gap-8">
+            <div class="xl:flex xl:flex-col xl:grid-cols-1 gap-8">
 
-                <div className="select-none bg-white rounded-xl drop-shadow-[0_0px_100px_rgba(124,134,255,0.3)] p-8 pt-15 pb-15 w-62 items-center text-center transition-shadow duration-300 cursor-pointer">
+                <div className="select-none bg-white rounded-xl drop-shadow-[0_0px_100px_rgba(124,134,255,0.3)] px-8 py-8 mx-8 mb-8 xl:mb-0 xl:py-15 xl:mx-0 xl:w-62 items-center text-center transition-shadow duration-300 cursor-pointer">
                     <h3 className="poppins-semibold text-5xl font-semibold mb-2 mt-8 text-orange-500">100+</h3>           
-                    <p className="poppins-regular text-gray-500 mb-6">
-                        We have more than customers
+                    <p className="poppins-regular text-xl text-gray-500 mb-6">
+                        Projects we have completed
                     </p>
                 </div>
 
-                <div className="select-none bg-white rounded-xl drop-shadow-[0_0px_100px_rgba(124,134,255,0.3)] p-8 pt-15 pb-15 w-62 items-center text-center transition-shadow duration-300 cursor-pointer">
-                    <h3 className="poppins-semibold text-5xl font-semibold mb-2 mt-8 text-green-400">200+</h3>           
-                    <p className="poppins-regular text-gray-500 mb-6">
-                        People who are helped because of our hard work
+                <div className="select-none bg-white rounded-xl drop-shadow-[0_0px_100px_rgba(124,134,255,0.3)] px-8 py-8 mx-8 mb-8 xl:mb-0 xl:py-15 xl:mx-0 xl:w-62 items-center text-center transition-shadow duration-300 cursor-pointer">
+                    <h3 className="poppins-semibold text-5xl font-semibold mb-2 mt-8 text-green-500">200+</h3>           
+                    <p className="poppins-regular text-xl text-gray-500 mb-6">
+                        Support from world-renowned companies
                     </p>
                 </div>
 
             </div>
         </div>
 
-        <div className='max-w-120 select-none'>
-            <h1 class="poppins-semibold text-[56px] leading-tight">Customer satisfaction is our first priority</h1>
-            <p class="poppins-regular text-lg mt-10 text-gray-500">We serve many customers, ranging from small businesses, medium entrepreneurs, to world-renowned companies. Their satisfaction is our pleasure. We strive to provide the best service by:</p>
-            <ul class="space-y-6 poppins-regular text-lg mt-10">
+        <div className='max-w-max px-10 xl:px-0 xl:max-w-120 select-none'>
+            <h1 class="poppins-semibold text-2xl xl:text-[56px] my-10 leading-tight">Customer satisfaction is our first priority</h1>
+            <p class="poppins-regular text-md xl:text-lg text-gray-500">We serve many customers, ranging from small businesses, medium entrepreneurs, to world-renowned companies. Their satisfaction is our pleasure. We strive to provide the best service by:</p>
+            <ul class="space-y-6 poppins-regular text-md xl:text-lg mt-10">
                 <li class="flex items-start ">
                     <div class="flex-shrink: 0 ">
                         <CircleCheck color="#4f39f6"/>

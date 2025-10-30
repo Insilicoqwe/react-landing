@@ -11,15 +11,15 @@ import courtney from '../assets/courtney.png'
 
 export const Reviews = () => {
   return (
-    <section class="mt-15 mb-15">
+    <section class="my-15 py-15 bg-gray-50">
         <div class="justify-center items-center">
             <div class="text-center">
-                <p class="poppins-semibold text-xl text-red-500 mb-5 mt-8">Testimonials</p>
-                <h1 class="poppins-semibold text-3xl">Some testimonials from our customers</h1>
+                <p class="poppins-semibold text-sm md:text-md xl:text-xl text-red-500 mt-8">Testimonials</p>
+                <h1 class="poppins-semibold text-lg md:text-xl xl:text-3xl">Some testimonials from our customers</h1>
             </div>
         </div>
         <div className="flex items-center justify-center mt-30">
-            <div className="grid grid-cols-3 gap-8 gap-y-30">
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 gap-y-30">
                 <ProfileCard icon={ronald} name="Ronald Richards" company="Google inc."/>
                 <ProfileCard icon={guy} name="Guy Hawkins" company="Paypal inc."/>
                 <ProfileCard icon={kristin} name="Kristin Watson" company="Microsoft inc."/>

@@ -11,29 +11,29 @@ export const WorkingSpace = () => {
     <section>
         <div class="justify-center items-center">
             <div class="text-center">
-                <p class="poppins-semibold text-xl text-red-500 mb-5 mt-15">Working space</p>
-                <h1 class="poppins-semibold text-3xl">Let’s meet our interior room decoration</h1>
+                <p class="poppins-semibold text-sm md:text-md xl:text-xl text-red-500 mt-8">Working space</p>
+                <h1 class="poppins-semibold text-lg md:text-xl xl:text-3xl">Let’s meet our interior room decoration</h1>
             </div>
         </div>
 
         <div className="flex items-center justify-center mt-8 ">
-            <div className="columns-3 gap-2">
-                <div class="mb-2 p-3">
+            <div className="xl:columns-3 gap-1 xl:gap-4">
+                <div class="mb-4">
                     <img src={working_space} alt="" />
                 </div>
-                <div class="mb-2 p-3">
+                <div class="mb-4">
                     <img src={rest_room} alt="" />
                 </div>
-                <div class="mb-2 p-3">
+                <div class="mb-4">
                     <img src={meeting_corner} alt="" />
                 </div>
-                <div class="mb-2 p-3">
+                <div class="mb-4">
                     <img src={single_working_space} alt="" />
                 </div>
-                <div class="mb-2 p-3">
+                <div class="mb-4">
                     <img src={meeting_room} alt="" />
                 </div>
-                <div class="mb-2 p-3">
+                <div class="mb-4">
                     <img src={kitchen} alt="" />
                 </div>
             </div>
