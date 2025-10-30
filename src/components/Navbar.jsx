@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.svg'
+import { Menu } from 'lucide-react';
 
 export const Navbar = () => {
     const navItems = [
@@ -24,10 +25,13 @@ export const Navbar = () => {
                 ))}
             </div>
 
-            <div>
+            <div class="hidden md:flex">
                 <a href="#" class="select-none drop-shadow-[0_0px_10px_rgba(79,57,246,0.5)] text-sm poppins-semibold bg-indigo-600 hover:bg-indigo-700 text-white px-7 py-4 rounded-lg transition-colors suration-300">
                     Contact us
                 </a>
+            </div>
+            <div class="flex md:hidden">
+                <Menu size={32}/>
             </div>
         </div>
     </nav>
