@@ -10,6 +10,7 @@ import Carousel from './components/Carousel'
 import FAQ from './components/FAQ'
 import { Reviews } from './components/Reviews'
 import { StartNow } from './components/StartNow'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <FAQ/>
       <Reviews/>
       <StartNow/>
+      <Footer/>
     </>
   )
 }

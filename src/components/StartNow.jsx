@@ -3,15 +3,23 @@ import { ChevronRight } from 'lucide-react';
 
 export const StartNow = () => {
   return (
-    <div class="px-50 py-50">
-        <div class="bg-yellow-400 py-25 flex flex-col justify-center text-center items-center rounded-3xl">
-            <p class="poppins-regular text-white text-md">Are You Ready For</p>
-            <h1 class="poppins-semibold text-white text-5xl mt-6">Start a New Project</h1>
-            <button className="items-center flex mt-8 px-12 py-5 rounded-lg bg-indigo-600 text-white text-xl font-semibold drop-shadow-2xl drop-shadow-amber-600/50 cursor-pointer">
-                Get Started
-                <ChevronRight />
-            </button>
+    <div className="relative max-w-5xl mx-auto px-4">
+          <div className="bg-yellow-400 rounded-3xl p-12 text-center shadow-2xl">
+            <p className="poppins-regular text-white text-sm font-medium mb-3">
+              Are You Ready For
+            </p>
+            <h2 className="poppins-semibold text-white text-4xl font-bold mb-8">
+              Start a New Project
+            </h2>
+            
+            <div className="flex justify-center max-w-md mx-auto relative">
+              <button class="flex gap-2 poppins-regular bg-indigo-600 rounded-xl py-4 px-11 text-white text-md">
+                Start now
+                <ChevronRight/>
+              </button>
+            </div>
+          </div>
         </div>
-    </div>
+    
   )
 }
