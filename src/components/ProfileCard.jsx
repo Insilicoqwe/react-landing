@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ProfileCard = ({ icon, name, company }) => {
   return (
-    <div className="relative bg-white rounded-3xl hover:drop-shadow-[0_0px_45px_rgba(79,57,246,0.20)] p-8 pt-20 max-w-sm w-full cursor-pointer transition-all duration-150">
+    <div className="relative bg-white dark:bg-darkbg rounded-3xl hover:drop-shadow-[0_0px_45px_rgba(79,57,246,0.20)] p-8 pt-20 max-w-sm w-full cursor-pointer transition-all duration-150">
         {/* Avatar */}
         <div className="absolute -top-16 left-1/2 transform -translate-x-1/2">
           <div className="relative">
@@ -16,14 +16,14 @@ export const ProfileCard = ({ icon, name, company }) => {
 
         {/* Content */}
         <div className="text-center mt-8">
-          <h2 className="poppins-semibold text-3xl font-bold text-gray-900 mb-2">
+          <h2 className="poppins-semibold text-3xl font-bold text-gray-900 dark:text-white mb-2">
             {name}
           </h2>
-          <p className="poppins-regular text-gray-400 text-lg mb-6">
+          <p className="poppins-light text-gray-400 dark:text-white text-lg mb-6">
             {company}
           </p>
           
-          <p className="poppins-regular text-gray-500 text-lg mb-8 px-4">
+          <p className="poppins-light text-gray-500 dark:text-white text-lg mb-8 px-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           </p>
 

@@ -1,10 +1,12 @@
 import React from 'react'
 import meet from '../assets/meet.png'
 
+import { Caption } from './Caption'
+
 export const Documentation = () => {
   return (
-    <section class="relative">
-        <div className="absolute inset-0 -z-10">
+    <section class="relative mt-25">
+        <div className="absolute inset-0 z-0">
         {/* Левая оранжевая волна */}
         <div className="absolute bottom-0 left-0 w-[80%] h-[80%] bg-orange-400 rounded-tr-[100%]"></div>
         {/* Правая красная волна */}
@@ -12,16 +14,13 @@ export const Documentation = () => {
       </div>
 
             <div class="justify-center items-center">
-                <div class="text-center">
-                    <p class="poppins-semibold text-sm md:text-md xl:text-xl text-red-500 mt-8">Our Documentation</p>
-                    <h1 class="poppins-semibold text-lg md:text-xl xl:text-3xl">See what our profile is like and how we work for your business</h1>
-                </div>
+                <Caption title="Our Documentation" text="See what our profile is like and how we work for your business"/>
 
-                <div class="flex items-center justify-center mt-15 z-10 px-15 pb-15">
+                <div class="flex items-center justify-center z-10 px-15 pb-15 mt-15">
                     <img src={meet} alt="" class="drop-shadow-2xl"/>
                 </div>
             </div>
             
         </section>
   )
-}
+} 

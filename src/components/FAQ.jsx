@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { ChevronUp, ChevronDown  } from 'lucide-react';
 
+import { Caption } from "./Caption";
+
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -38,13 +40,10 @@ export default function FAQ() {
   };
 
   return (
-    <div className="relative bg-white py-16 overflow-hidden px-4 flex justify-center">
+    <div className="relative py-16 overflow-hidden px-4 flex justify-center">
       <div className="w-full max-w-3xl">
 
-        <div class="relative text-center z-10">
-            <p class="poppins-semibold text-sm md:text-md xl:text-xl text-red-500 mt-8">Frequently Ask Question</p>
-            <h1 class="poppins-semibold text-lg md:text-xl xl:text-3xl">Some of our frequently asked questions</h1>
-        </div>
+        <Caption title="Frequently Ask Question" text="Some of our frequently asked questions" />
 
         <div className="relative space-y-4 mt-15 z-10">
           {faqs.map((item, index) => (
@@ -52,14 +51,14 @@ export default function FAQ() {
               key={index}
               className={`py-5 border rounded-xl overflow-hidden transition-all duration-300 ${
                 openIndex === index
-                  ? "border-indigo-500 bg-white shadow-md"
-                  : "border-gray-200 bg-white"
+                  ? "border-indigo-500 bg-white dark:bg-darkbg shadow-md"
+                  : "border-gray-200 bg-white dark:bg-darkbg"
               }`}
             >
               {/* Заголовок вопроса */}
               <button
                 onClick={() => toggle(index)}
-                className="poppins-semibold cursor-pointer w-full flex justify-between items-center text-left px-6 py-4 font-medium text-gray-800 hover:bg-gray-50 transition"
+                className="poppins-semibold cursor-pointer w-full flex justify-between items-center text-left px-6 py-4 font-medium text-gray-800 dark:text-white transition"
               >
                 <span>{item.question}</span>
                 {openIndex === index ? (
@@ -75,7 +74,7 @@ export default function FAQ() {
                   openIndex === index ? "max-h-96 p-6 pt-0" : "max-h-0"
                 }`}
               >
-                <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+                <p className="text-gray-600 dark:text-white leading-relaxed">{item.answer}</p>
               </div>
             </div>
           ))}

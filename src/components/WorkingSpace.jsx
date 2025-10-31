@@ -5,16 +5,12 @@ import meeting_room from '../assets/meeting-room.png'
 import rest_room from '../assets/rest-room.png'
 import single_working_space from '../assets/single-working-space.png'
 import kitchen from '../assets/kitchen.png'
+import { Caption } from './Caption'
 
 export const WorkingSpace = () => {
   return (
-    <section>
-        <div class="justify-center items-center">
-            <div class="text-center">
-                <p class="poppins-semibold text-sm md:text-md xl:text-xl text-red-500 mt-8">Working space</p>
-                <h1 class="poppins-semibold text-lg md:text-xl xl:text-3xl">Let’s meet our interior room decoration</h1>
-            </div>
-        </div>
+    <section class="my-25">
+        <Caption title="Working space" text="Let’s meet our interior room decoration"/>
 
         <div className="flex items-center justify-center mt-8 ">
             <div className="xl:columns-3 gap-1 xl:gap-4">

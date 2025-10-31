@@ -4,19 +4,19 @@ import girl from '../assets/happy-girl.png'
 
 export const GetStartred = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 md:p-8">
+    <div className="min-h-[calc(100vh-90px)] bg-gray-50 dark:bg-darkbg flex items-center justify-center p-4 md:p-8">
       <div className="max-w-7xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
 
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="poppins-semibold text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="poppins-semibold dark:text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Make your business{' '}
-              <span className="text-orange-500">more powerful</span>
+              <span className="text-orange-500 dark:text-yellow-400">more powerful</span>
               <br />
               with us
             </h1>
             
-            <p className="poppins-regular text-gray-600 text-lg mb-8 max-w-xl mx-auto lg:mx-0">
+            <p className="poppins-regular text-gray-600 dark:text-white text-lg mb-8 max-w-xl mx-auto lg:mx-0">
               We provide various services to make your business grow and get bigger. Your satisfaction is our first priority.
             </p>
             

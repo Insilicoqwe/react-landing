@@ -29,11 +29,11 @@ export default function Carousel() {
   const prev = () =>
     setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   return (
-    <div className="bg-orange-400 text-white flex flex-col items-center justify-center py-20 px-4">
+    <div className="bg-orange-400 dark:bg-darkerbg text-white flex flex-col items-center justify-center py-20 px-4">
       <div className="flex items-center justify-center gap-5 xl:gap-25 w-full max-w-7xl">
         <button
           onClick={prev}
-          className="bg-white text-orange-400 p-3 rounded-full shadow-md hover:bg-indigo-600 hover:text-white transition cursor-pointer"
+          className="bg-white text-orange-400 dark:text-darkerbg p-3 rounded-full shadow-md hover:bg-indigo-600 hover:text-white transition cursor-pointer"
         >
           <ChevronLeft />
         </button>
@@ -51,7 +51,7 @@ export default function Carousel() {
 
         <button
           onClick={next}
-          className="bg-white text-orange-400 p-3 rounded-full shadow-md hover:bg-indigo-600 hover:text-white transition cursor-pointer"
+          className="bg-white text-orange-400 dark:text-darkerbg p-3 rounded-full shadow-md hover:bg-indigo-600 hover:text-white transition cursor-pointer"
         >
           <ChevronRight />
         </button>
@@ -62,7 +62,7 @@ export default function Carousel() {
           <div
             key={i}
             className={`h-1 w-6 rounded-full transition-all duration-300 ${
-              i === current ? "bg-white w-8" : "bg-yellow-300/50"
+              i === current ? "bg-white w-8" : "bg-yellow-300/50 dark:bg-yellow-400"
             }`}
           ></div>
         ))}

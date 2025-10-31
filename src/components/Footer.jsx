@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className="flex-grow"></div>
 
       {/* Footer Section */}
-      <footer className="relative bg-slate-900 text-white">
+      <footer className="relative bg-slate-900 dark:bg-darkerbg text-white">
         {/* Subscribe Card - Overlapping */}
         <div className="relative -top-24 max-w-5xl mx-auto px-4">
           <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-12 text-center shadow-2xl">

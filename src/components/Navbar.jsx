@@ -10,7 +10,7 @@ export const Navbar = () => {
     ];
 
   return (
-    <nav class=" w-full top-0 left-0 z-50 backdrop-blur-3xl">
+    <nav class=" w-full top-0 left-0 z-50 backdrop-blur-3xl dark:bg-darkbg">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <img src={logo} alt="Logo" class="select-none drop-shadow-[0_0px_10px_rgba(79,57,246,0.5)]"/>
             <div class="hidden md:flex items-center space-x-15">
@@ -18,7 +18,7 @@ export const Navbar = () => {
                     <a
                     key={item.name}
                     href={item.href}
-                    class="select-none text-xl poppins-semibold text-gray-500 hover:text-indigo-600 transition-colors duration-300"
+                    class="select-none text-xl poppins-semibold text-gray-500 dark:text-white dark:hover:text-yellow-400 hover:text-indigo-600 transition-colors duration-300"
                     >
                         {item.name}
                     </a>
@@ -30,8 +30,10 @@ export const Navbar = () => {
                     Contact us
                 </a>
             </div>
-            <div class="flex md:hidden">
-                <Menu size={32}/>
+            <div class="flex md:hidden cursor-pointer">
+                <a href="">
+                    <Menu size={32} color="#FFFFFF"/>
+                </a>
             </div>
         </div>
     </nav>
